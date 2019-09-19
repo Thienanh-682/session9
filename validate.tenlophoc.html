@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>validate Tên của lớp học</title>
+</head>
+<body>
+    <script>
+        function validateLophoc(str) {
+            rpx = /^([CAP]+){1}([0-9]+){4}(([GHIKLM]+){1})$/;
+            if (rpx.test(str)) {
+                return true;
+            }
+                return false;
+        }
+        let tenlop="C0318G";
+        console.log(validateLophoc(tenlop));
+          tenlop="A1234H";
+        console.log(validateLophoc(tenlop));
+          tenlop="P4567L";
+        console.log(validateLophoc(tenlop));
+          tenlop="F0318G";
+        console.log(validateLophoc(tenlop));
+          tenlop="T0318G";
+        console.log(validateLophoc(tenlop));
+          tenlop="V0318G";
+        console.log(validateLophoc(tenlop));
+
+
+    </script>
+</body>
+</html>
