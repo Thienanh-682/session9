@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự chuỗi</title>
+</head>
+<body>
+     <script>
+         function isFirstLetterUpperCase(str) {
+             regexp = /^[A-Z]/;
+             if (regexp.test(str)) {
+                 alert("Ký tự đầu tiên của chuỗi là chữ hoa")
+             } else {
+                 alert("Ký tự đầu tiên của chuỗi không phải chữ hoa")
+             }
+         }
+         isFirstLetterUpperCase('Abcd');
+         isFirstLetterUpperCase('Nguyen Van Nam');
+         isFirstLetterUpperCase('NGUYEN VAN NAM');
+         isFirstLetterUpperCase('nguyen van nam');
+
+
+     </script>
+</body>
+</html>
